@@ -4,6 +4,6 @@ defmodule RumblWeb.UserController do
 
     def index(conn, _params) do
         user = Accounts.list_users()
-        remder(conn, "index.html", users: users)
+        render(conn, "index.html", user: user)
     end
 end
